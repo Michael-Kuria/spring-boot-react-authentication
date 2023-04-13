@@ -1,0 +1,75 @@
+.login__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    /* border: 1px solid #3e3e3e; */
+    padding: 2rem;
+    border-radius: 1rem;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
+    height: fit-content;
+
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.login__field{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+    width: 400px;
+    
+
+}
+
+.login__field label{
+    
+}
+
+.login__field input{
+    padding: .5rem;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: none;
+    border: 1px solid #9f9f9f;
+    border-radius: .5rem;
+
+}
+
+.login__field--checkbox{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+
+.login__field--checkbox input{
+    width: 25px;
+    border: 1px solid #9f9f9f;
+    
+}
+
+.btn{
+    color: #fff;
+    background-color: #0D6EFD;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: inherit;
+    font-weight: inherit;
+}
