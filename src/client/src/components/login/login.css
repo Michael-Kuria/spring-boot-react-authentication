@@ -1,20 +1,12 @@
-.login__form{
+.login{
+    background-color: #f0f2f5;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: fit-content;
-    align-items: center;
     justify-content: center;
-    margin-top: 4rem;
-    /* border: 1px solid #3e3e3e; */
-    padding: 2rem;
-    border-radius: 1rem;
+}
+.login__form{
 
-    font-size: 1.2rem;
-    font-weight: 300;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffff;
-    height: fit-content;
 
 }
 
@@ -29,7 +21,6 @@ h2{
     gap: .5rem;
     margin-top: 1rem;
     width: 400px;
-    
 
 }
 
@@ -38,12 +29,12 @@ h2{
 }
 
 .login__field input{
-    padding: .5rem;
+    /* padding: .5rem;
     font-size: inherit;
     font-weight: inherit;
     outline: none;
     border: 1px solid #9f9f9f;
-    border-radius: .5rem;
+    border-radius: .5rem; */
 
 }
 
@@ -61,15 +52,24 @@ h2{
     
 }
 
-.btn{
-    color: #fff;
-    background-color: #0D6EFD;
-    border: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.login__btn{
     width: 100%;
     margin-top: 1rem;
-    border-radius: .5rem;
-    font-size: inherit;
-    font-weight: inherit;
+}
+
+
+
+.login__link{
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__link a{
+    text-decoration: none;
+}
+
+.login__link  a:hover{
+    color: #257dfd;
 }

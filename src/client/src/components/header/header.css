@@ -1,0 +1,19 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    margin: 0 4rem;
+    margin-top: 1rem;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+
+}
