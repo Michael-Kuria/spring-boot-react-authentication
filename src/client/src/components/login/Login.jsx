@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./login.css";
+import { handleLogin } from "../client/Client";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -20,9 +21,13 @@ const Login = () => {
     const values = {
       username: username,
       password: password,
-      rememberMe: rememberMe,
+      // rememberMe: rememberMe,
     };
     console.log(values);
+
+    handleLogin(values).then((res) => {
+      console.log(res.json());
+    });
 
     resetForm();
   };

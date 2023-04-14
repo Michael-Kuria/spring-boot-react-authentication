@@ -46,3 +46,5 @@ build/
 /src/client/build/
 
 
+/src/client/node/
+/src/main/resources/static/
