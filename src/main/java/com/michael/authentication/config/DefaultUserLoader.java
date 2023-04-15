@@ -41,6 +41,7 @@ public class DefaultUserLoader {
             if(userService.userCount() < 1){
                 userService.saveUser(user);
             }
+            System.out.println(String.format("User %s details", userService.loadUserByUsername("root@gmail.com").getUsername()));
 
 
             Car car1 = new Car("Mercedes", 1000);

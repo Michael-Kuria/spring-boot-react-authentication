@@ -8,11 +8,12 @@ import Header from "./components/header/Header";
 function App() {
   return (
     <main>
-      <Header />
-      <Routes>
+      {/* <Header /> */}
+      {/* <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
-      </Routes>
+      </Routes> */}
+      <Login />
     </main>
   );
 }

@@ -26,7 +26,7 @@ public class UserService implements UserDetailsService {
         if(user.isPresent()){
             return user.get();
         }
-        return null;
+        throw new UsernameNotFoundException(String.format("User %s was not found", email));
     }
 
     public void saveUser(User user){

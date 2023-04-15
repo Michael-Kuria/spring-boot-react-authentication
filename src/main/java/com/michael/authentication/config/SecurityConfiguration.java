@@ -33,14 +33,14 @@ public class SecurityConfiguration {
                         .frameOptions()
                         .disable())
                 .authorizeHttpRequests(requests -> requests
-                        .requestMatchers("/login", "/logout").permitAll())
-//                        .anyRequest()
-//                        .authenticated())
+                        .requestMatchers("/api/*").authenticated()
+                        .anyRequest()
+                        .permitAll())
                 .formLogin( form -> form
-                        .loginPage("/login")
+                        .loginPage("/index.html")
                         .loginProcessingUrl("/login")
-                        .defaultSuccessUrl("/")
-                        .failureUrl("/login?error=true"))
+                        .defaultSuccessUrl("/", true)
+                        .failureUrl("/index.html?error=true"))
                 .rememberMe(rememberMe -> rememberMe
                         .tokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(21))
                         .key("1234552222"));

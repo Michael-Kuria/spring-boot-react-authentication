@@ -21,13 +21,18 @@ const Login = () => {
     const values = {
       username: username,
       password: password,
-      // rememberMe: rememberMe,
+      rememberMe: rememberMe,
     };
     console.log(values);
 
-    handleLogin(values).then((res) => {
-      console.log(res.json());
-    });
+    handleLogin(values)
+      .then((res) => {
+        console.log("I am here");
+        console.log(res.json());
+      })
+      .catch((error) => {
+        console.log(error.json());
+      });
 
     resetForm();
   };
